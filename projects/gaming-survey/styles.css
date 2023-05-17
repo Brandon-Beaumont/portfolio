@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
+  margin: auto;
+  background-image: linear-gradient(115deg,rgba(9, 0, 21, 0.75),rgba(19, 0, 40, 0.75)),url(./background.webp);
+  background-size: cover;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label, p {
+  text-align: left;
+}
+
+.selectables {
+  text-align: left;
+  width: 154px;
+}
+
+.background {
+  background-color: rgba(34, 0, 66, 0.75);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  max-width: 520px;
+}
+
+#number, #email, #name, #submit, select, textarea {
+  width: 100%;
+}
+
+#submit {
+  margin-top: 10px;
+}
+
+#title, #title-description {
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .background {
+    padding: 10px
+  }
+}

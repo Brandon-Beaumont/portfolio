@@ -1,0 +1,50 @@
+#image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  height: auto;
+}
+
+#title {
+  text-align: center;
+}
+
+li {
+  margin: 1em;
+}
+
+#timeline {
+  max-width: 518px;
+  margin: 0 auto;
+}
+
+#img-caption {
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+#img-div {
+  background-color: white;
+  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+#tribute-link:hover {
+  background-color: rgb(130, 141, 139);
+  color: rgb(59, 5, 113);
+  cursor: pointer;
+}
+
+body {
+  background-color: rgb(130, 141, 139);
+}
+
+a {
+  color: rgb(0, 0, 0);
+}

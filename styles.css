@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --main-accent-color: #ce002d;
+  --main-light-color: #e4e4e4;
+  --main-dark-color: #1a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--main-dark-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--main-light-color);
+  margin: 0;
+}
+
+nav {
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-accent-color);
+  font-size: 24px;
+  line-height: 24px;
+  padding: 16px 0;
+}
+
+a {
+  color: var(--main-light-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  color: var(--main-accent-color);
+  font-size: 36px;
+  margin: 0;
+  padding: 88px 0 32px 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+#email {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 16px 0;
+}
+
+#email a {
+  background-color: var(--main-accent-color);
+  font-size: 24px;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 32px 32px 0 0;
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: right;
+  margin: 0 16px;
+}
+
+#title-highlight {
+  color: var(--main-accent-color);
+  font-size: 36px;
+  text-align: left;
+  font-weight: bold;
+}
+
+#about {
+  height: 100vh;
+}
+
+#about-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#brief {
+  position: relative;
+  bottom: 25vh;
+  text-align: center;
+  margin: 0 16px;
+}
+
+#projects, #certificates, #contact {
+  min-height: 100vh;
+}
+
+#projects-grid, #certificates-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#contact {
+  text-align: center;
+}
+
+.mw672-show, .mw480-show {
+  display: none;
+}
+
+.project, .certificate {
+  background-color: var(--main-accent-color);
+  text-align: center;
+  border-radius: 32px;
+  margin: 16px;
+  padding: 2px;
+}
+
+.project-image img, .certificate-image img {
+  object-fit: cover;
+  height: calc(100% - 47px);
+  border-radius: 32px 32px 0 0;
+}
+
+@media (max-width: 1280px) {
+  #projects-grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 720px) {
+  #projects-grid {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 672px) {
+  .mw672-show {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .mw480-show {
+    display: inline;
+  }
+
+  .mw480-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 488px) {
+  #email a {
+    font-size: 16px;
+  }
+}
+
+/* Remove everything below after adding second certificate. Also remove the #filler div elements from HTML */
+
+.filler {
+  width: calc(100vw / 3)
+}
+
+@media (max-width: 1280px) {
+  .filler {
+    width: 20vw
+  }
+}
+
+@media (max-width: 720px) {
+  .filler {
+    display: none;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Video Gaming Survey</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Video Gaming Survey</h1>
+    <p id="title-description">Thank you for taking the time to fill out this gaming survey</p>
+  <div class="background">
+    <form id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label">Name</label><br>
+        <input id="name" name="name" type="text" required placeholder="Enter your name"/><br><br>
+        
+        <label for="email" id="email-label">Email</label><br>
+        <input id="email" name="email" type="email" required placeholder="Enter your email"/><br><br>
+
+        <label for="age" id="number-label">Age</label><br>
+        <input id="number" name="age" type="number" min="13" max="120" placeholder="Age"/><br><br>
+
+        <label for="platform">What platform do you play on?</label><br>
+        <select id="dropdown" name="platform">
+          <option disabled selected>Select one</option><br><br>
+          <option value="pc">PC</option><br><br>
+          <option value="playstation">Playstation</option><br><br>
+          <option value="xbox">Xbox</option><br><br>
+          <option value="switch">Switch</option><br><br>
+          <option value="other">Other</option><br><br>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <p>What age did you start playing games?</p>
+        <div  class="selectables">
+          <input id="1-8" name="playing-age" type="radio" value="1-8" />
+          <label for="1-8">1-8</label><br>
+
+          <input id="9-13" name="playing-age" type="radio" value="9-13" />
+          <label for="9-13" >9-13</label><br>
+
+          <input id="14-18" name="playing-age" type="radio" value="14-18" />
+          <label for="14-18" >14-18</label><br>
+          
+          <input id="18+" name="playing-age" type="radio" value="18+" />
+          <label for="18+" >18+</label><br>
+        </div><br><br>
+
+        <label for="playtime">How many hours would you say you play daily</label><br>
+        <select id="2nd-dropdown" name="playtime">
+          <option disabled selected>Select one</option>
+          <option value="less-than-1-hour">Less than 1 hour</option>
+          <option value="1-2hours">1-2 hours</option>
+          <option value="2-3hours">2-3 hours</option>
+          <option value="4-5hours">4-5 hours</option>
+          <option value="6+hours">6+ hours</option>
+        </select>
+
+        <p>Out of these what are your favourite genres to play <br>(check all that apply)</p>
+        <div class="selectables">
+          <input id="Action" name="genre" type="checkbox" value="Action" />
+          <label for="Action">Action</label><br>
+
+          <input id="Adventure" name="genre" type="checkbox" value="adventure" />
+          <label for="Adventure">Adventure</label><br>
+
+          <input id="FPS" name="genre" type="checkbox" value="fps" />
+          <label for="FPS">FPS</label><br>
+
+          <input id="Racing" name="genre" type="checkbox" value="racing" />
+          <label for="Racing">Racing</label><br>
+
+          <input id="Strategy" name="genre" type="checkbox" value="stategy" />
+          <label for="Strategy">Strategy</label><br>
+
+          <input id="Battleroyale" name="genre" type="checkbox" value="battleroyle" />
+          <label for="Battleroyale">Battle royale</label><br>
+
+          <input id="Fighting" name="genre" type="checkbox" value="fighting" />
+          <label for="Fighting">Fighting</label><br>
+
+          <input id="RPG" name="genre" type="checkbox" value="rpg" />
+          <label for="RPG">RPG</label><br>
+
+          <input id="JRPG" name="genre" type="checkbox" value="jrpg" />
+          <label for="JRPG">JRPG</label><br>
+
+          <input id="ActionRPG" name="genre" type="checkbox" value="actionrpg" />
+          <label for="ActionRPG">Action RPG</label><br>
+
+          <input id="Sports" name="genre" type="checkbox" value="sports" />
+          <label for="Sports">Sports</label><br>
+          
+          <input id="MMO" name="genre" type="checkbox" value="mmo" />
+          <label for="MMO">MMO</label><br>
+
+          <input id="Horror" name="genre" type="checkbox" value="horror" />
+          <label for="Horror">Horror</label><br>
+        </div><br><br>
+        <label for="description">Describe your favourite game</label><br>
+        <textarea id="description" name="description" rows="5" cols="30" placeholder="Enter your text here..."></textarea><br>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />  
+    </form>
+  </div>  
+</body>
+</html>
